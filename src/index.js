@@ -1,21 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+// Theming
 import './index.css';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import './theming/opensans.css';
+import theme from './theming/ifit-theme';
+import { ThemeProvider } from '@material-ui/core/styles';
+
 import App from './App';
 
-
-
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: "#0069d2"
-    }
-  },
-  typography: {
-    fontFamily: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif']
-  }
-})
 
 ReactDOM.render(
   <React.StrictMode>
